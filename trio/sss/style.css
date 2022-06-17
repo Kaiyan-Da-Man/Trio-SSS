@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .header {
     background-color: #00853E;
 }
@@ -11,10 +10,11 @@ body {
     color: white;
 }
 
+.front-pic {
+    position: relative;
+}
+
 .front-pic img {
-    /*height: 679px;
-    width: 2037px;*/
-    width: 100%;
     filter: brightness(60%);
 }
 
@@ -30,3 +30,43 @@ body {
     text-align: center;
 }
 
+.department {
+    text-transform: uppercase;
+}
+
+/* breadcrumb navigation */
+
+/* style list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+}
+
+/* display list item side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* add '/' w/ nbsp behind each list item */
+ul.breadcrumb li+li::before {
+    padding: 8px;
+    color: lightgray;
+    content: "/\00a0";
+}
+
+/* add color to links inside list */
+ul.breadcrumb li a {
+    color: #00853E;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.main {
+    padding: 0 0.85rem;
+    box-sizing: border-box;
+}
