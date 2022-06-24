@@ -1,5 +1,19 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+         
+  }
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -38,7 +52,7 @@ body {
 
 /* style list */
 ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 75px 50px 0;
     list-style: none;
     background-color: white;
 }
@@ -67,6 +81,6 @@ ul.breadcrumb li a:hover {
 }
 
 .main {
-    padding: 0 0.85rem;
+    padding: 0 0.2rem;
     box-sizing: border-box;
 }
